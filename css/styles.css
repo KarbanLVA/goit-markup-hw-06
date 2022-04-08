@@ -610,6 +610,9 @@ img {
 
 /* ПРИСОЕДИНЯЙТЕСЬ */
 
+.footer-join {
+  margin-right: 93px;
+}
 .ftr-join-title {
   margin-bottom: 20px;
 
@@ -645,6 +648,58 @@ img {
 .ftr-link-icon {
   fill: var(--main-white-color);
 }
+/* Подпишитесь на рассылку */
+
+.ftr-subscride-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+}
+
+.ftr-form-input {
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+
+  background-color: #2F303A;
+  color: var(--main-white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.ftr-form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ftr-form-button {
+  padding: 10px 62px 10px 29px;
+  min-width: 200px;
+  position: relative;
+
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+.ftr-button-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
 
 /* МОДАЛЬНОЕ ОКНО */
 .backdrop {
@@ -667,6 +722,7 @@ img {
   pointer-events: none;
 }
 .modal-wrapper {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -694,4 +750,64 @@ img {
   border-radius: 50%;  
   background-color: var(--main-white-color); 
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* форма заполнения в модальном окне */
+
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 448px;  
+}
+.modal-thems {
+margin-bottom: 12px;
+
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.modal-thems-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+}
+.thems-item-label {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;  
+  letter-spacing: 0.01em;  
+  color: #757575;
+}
+.thems-item-input { 
+  padding: 11px 12px 11px 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.thems-item-comment { 
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.thems-item-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;  
+  color: rgba(117, 117, 117, 0.5)
+}
+.thems-item-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
 }
